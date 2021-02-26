@@ -14,34 +14,56 @@
     <link type="text/css" rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header>
-      <div id="side-bar">
-        <div class="toggle-button" id="toggle-button">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-
-        <ul>
-          <li>ACCUEIL</li>
-          <li>LA CARTE</li>
-          <li>COMMANDEZ EN LIGNE</li>
-          <li>CONTACT</li>
-        </ul>
-      </div>
-      <div class="content">
-        <section>
-          <h1>Bienvenue</h1>
-          <h1>Chez May</h1>
-        </section>
-      </div>
+    <header class="header">
+      <a href="" class="logo">CHEZ MAY</a>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"
+        ><span class="navicon"></span
+      ></label>
+      <ul class="menu">
+        <li><a href="#work">SUGGESTION DU CHEF</a></li>
+        <li><a href="#about">LA CARTE</a></li>
+        <li><a href="#careers">A EMPORTER</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
     </header>
 
-    <img class="ardoise" src="./images/ardoise.png" width="250px" />
+    <div id="imagePrincipale">
+      <h1>Clos Marsault</h1>
+      <div id="premierTrait"></div>
+      <h3>Chambres d'hôtes</h3>
+    </div>
 
-    <div class="coordonner">
-      <p>HUA HIN</p>
-      <p>Tel: 07.00.00.00.03</p>
+    <div class="suggestion">
+      <h1>SUGGESTION DU CHEF</h1>
+      <div class="entre">
+        <h2>En entrée</h2>
+        <img src="./images/saladepapaye2.jpg" />
+        <h3>Salade de papaye verte</h3>
+        <h4>
+          Retrouvez toute la fraicheur de la papaye et la puissance du piment
+          dans cette salade fraiche de papaye verte, préparée par notre chef a
+          la façon Issan.
+        </h4>
+      </div>
+      <div class="plat">
+        <h2>Plat du moment</h2>
+        <img src="./images/padthai.jpg" />
+        <h3>Pad Thaï crevettes</h3>
+        <h4>
+          Plat traditionnelle Thaïlandais. Revisité par notre chef, découvrez ou
+          redécouvrez se plat thypique de la Thaïlande.
+        </h4>
+      </div>
+      <div class="dessert">
+        <h2>Le dessert</h2>
+        <img src="./images/mangue2.jpg" />
+        <h3>Mangue et riz gluant</h3>
+        <h4>
+          Un dessert rafraichissant pour terminer votre repas sur une note
+          sucré.
+        </h4>
+      </div>
     </div>
 
     <script src="./script.js"></script>

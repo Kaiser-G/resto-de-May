@@ -3,93 +3,177 @@
   padding: 0;
 }
 body {
-  background-image: url(./images/cheftoc.png);
-  background-position: center top;
-
-  background-size: 25%;
-  background-repeat: no-repeat;
-  background-color: #038d4c;
-  font-family: sans-serif;
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  background-color: rgba(161, 225, 168, 1);
 }
 
-.content {
+a {
+  color: #000;
+}
+
+/* header */
+
+.header {
+  background-color: rgba(27, 95, 66, 1);
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: rgba(27, 95, 66, 1);
+}
+
+.header li a {
   color: white;
-  transition: 1s;
-  height: 100vh;
-}
-
-h1 {
-  padding-top: 15px;
-  text-align: center;
-  font-size: 4rem;
-}
-
-#side-bar {
-  position: absolute;
-  width: 230px;
-  height: 100%;
-  background-color: #09fbba;
-  left: -300px;
-  transition: 0.5s ease-out;
-  z-index: 4;
-}
-.toggle-button {
-  position: absolute;
-  top: 30px;
-  left: 310px;
-  cursor: pointer;
-  height: 50px;
-  width: 50px;
-}
-
-.toggle-button span {
-  width: 60px;
-  height: 10px;
-  border-radius: 5px;
-  background-color: white;
   display: block;
-  margin-top: 4px;
-  transition: 0.5s ease;
+  padding: 20px 20px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
 }
 
-li {
-  color: #292929;
-  list-style-type: none;
-  font-size: 1.5rem;
+.header li a:hover,
+.header .menu-btn:hover {
+  color: #000;
+  background-color: #f4f4f4;
+}
+
+.header .logo {
+  color: white;
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
   cursor: pointer;
-  padding-left: 5px;
-  margin-top: 1em;
-}
-li:hover {
-  background: #292929;
-  color: #fcfcfb;
-}
-
-#side-bar.active {
-  left: 0;
-}
-#side-bar.active.toggle-button {
-  top: 2.8rem;
-  left: 235px;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
 }
 
-#side-bar.active span {
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: "";
+  display: block;
+  height: 100%;
   position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
 }
-#side-bar.active span:nth-child(1) {
-  transform: rotate(45deg);
+
+.header .menu-icon .navicon:before {
+  top: 5px;
 }
-#side-bar.active span:nth-child(2) {
-  opacity: 0;
+
+.header .menu-icon .navicon:after {
+  top: -5px;
 }
-#side-bar.active span:nth-child(3) {
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
   transform: rotate(-45deg);
 }
 
-#side-bar.active ~ .content {
-  opacity: 0.3;
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
 }
-p {
-  background-color: white;
-  font-size: 2em;
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+/* !!!!!!!!!!image page d'accueil!!!!!!!!!!!!!!!!!!! */
+#imagePrincipale {
+  padding-top: 60px;
+  background: url(./images/grandes\ images/sallerestaurant.jpg) no-repeat fixed
+    50% 50%;
+  background-size: cover;
+  height: 799px;
+}
+
+h1 {
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+  color: antiquewhite;
+  font-size: 6em;
+  margin-top: 100px;
+  text-shadow: 1px 3px 2px black;
+}
+
+#premierTrait {
+  height: 1px;
+  width: 25%;
+  margin: -3px auto;
+  background-color: #fffae1;
+  box-shadow: 1px 3px 2px black;
+}
+
+h3 {
+  text-align: center;
+  color: antiquewhite;
+  font-size: 3em;
+  text-shadow: 1px 3px 2px black;
 }
