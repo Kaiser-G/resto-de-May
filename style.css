@@ -222,7 +222,6 @@ a {
   border: none;
   font-size: 1.2em;
   border-radius: 8px;
-  font-size: 1.5em;
   background-color: #fffae1;
   width: 50%;
   margin-left: 25%;
@@ -235,7 +234,6 @@ a {
   text-decoration: none;
   text-align: center;
   border: none;
-  font-size: 1.2em;
   border-radius: 8px;
   font-size: 1.5em;
 }
@@ -246,6 +244,32 @@ a {
 .button a:hover {
   color: white;
   background-color: red;
+}
+
+#secondTrait {
+  height: 1px;
+  width: 25%;
+  margin: -3px auto;
+  background-color: #fffae1;
+  box-shadow: 1px 3px 2px black;
+}
+.contact {
+  margin: 45px 30px 20px 30px;
+  border: 2px solid;
+  padding: 20px;
+  border: 2px solid;
+}
+.contact h1 {
+  background-color: white;
+  color: rgba(161, 225, 168, 1);
+  text-align: center;
+  font-size: 2em;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 25px;
+  margin-bottom: 30px;
+  padding: 15px 5px 15px 5px;
+  border-radius: 15px;
 }
 /* !!!!!!!!!!!!RESPONSIVE§§§§§§§§§§§§§§§§§§§§§§§§§§§§§ */
 @media (max-width: 600px) {
