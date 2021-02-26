@@ -200,9 +200,91 @@ a {
   flex-direction: column;
   margin-left: 30%;
   margin-top: -10%;
-  margin-bottom: 15%;
+  margin-bottom: 10%;
+}
+.plat {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30%;
+  margin-top: -10%;
+  margin-bottom: 10%;
+}
+.dessert {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30%;
+  margin-top: -10%;
+  margin-bottom: 5%;
 }
 
-.entre h3 {
+.button {
+  text-align: center;
+  border: none;
+  font-size: 1.2em;
+  border-radius: 8px;
+  font-size: 1.5em;
+  background-color: #fffae1;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 25px;
+  margin-bottom: 30px;
+  padding: 15px 5px 15px 5px;
+}
+.button a {
   color: red;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  font-size: 1.2em;
+  border-radius: 8px;
+  font-size: 1.5em;
+}
+
+.button:hover {
+  background-color: red;
+}
+.button a:hover {
+  color: white;
+  background-color: red;
+}
+/* !!!!!!!!!!!!RESPONSIVE§§§§§§§§§§§§§§§§§§§§§§§§§§§§§ */
+@media (max-width: 600px) {
+  .suggestion {
+    margin: 0;
+    border: 2px solid;
+  }
+
+  .suggestion h1 {
+    width: auto;
+    margin-left: 5%;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    padding: 0;
+  }
+
+  .salade {
+    width: 250px;
+  }
+  .entre {
+    margin: 0;
+  }
+  .pad {
+    width: 250px;
+  }
+  .plat {
+    margin: 0;
+  }
+  .mangue {
+    width: 250px;
+  }
+  .dessert {
+    margin: 0;
+  }
+  .button {
+    width: auto;
+    margin-left: 1%;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    padding: 0;
+  }
 }
