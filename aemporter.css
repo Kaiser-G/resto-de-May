@@ -147,16 +147,14 @@ a {
   }
 }
 /* fin de la barre de nav */
-
-#imagePrincipaleCarte {
+#imagePrincipaleAEmporter {
   padding-top: 60px;
-  background: url(./images/grandes\ images/sallerestaurant2.jpg) no-repeat fixed
-    50% 50%;
+  background: url(./images/vente-a-emporter.jpeg) no-repeat fixed 50% 50%;
   background-size: cover;
-  height: 20em;
+  height: 30em;
 }
 
-#imagePrincipaleCarte h1 {
+#imagePrincipaleAEmporter h1 {
   font-family: "Dancing Script", cursive;
   text-align: center;
   color: antiquewhite;
@@ -167,26 +165,4 @@ a {
 
 h1 {
   color: red;
-}
-.entreesPlats {
-  display: flex;
-  justify-content: center;
-}
-.entrees {
-  border: 2px solid;
-  width: 320px;
-}
-.plats {
-  border: 2px solid;
-  width: 320px;
-  margin-left: 5em;
-}
-/* §§§§§§§§§§§§§§§§§§§§§debut du responsive§§§§§§§§§§§§§§§§§§§§§§§ */
-@media (max-width: 730px) {
-  .entreesPlats {
-    flex-direction: column;
-  }
-  .plats {
-    margin-left: 0;
-  }
 }
