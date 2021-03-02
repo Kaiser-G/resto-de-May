@@ -167,6 +167,9 @@ a {
 
 h1 {
   color: red;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 25px;
 }
 .entreesPlats {
   display: flex;
@@ -176,11 +179,84 @@ h1 {
   border: 2px solid;
   width: 320px;
 }
+.entrees h2 {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+.entrees h3 {
+  text-align: center;
+}
+.entrees img {
+  padding-left: 15%;
+  margin-bottom: 25px;
+}
 .plats {
+  border: 1px solid;
+  width: 320px;
+  margin-left: 5em;
+  border-radius: 15px;
+  background-color: aqua;
+}
+.plats h2 {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+.plats h3 {
+  text-align: center;
+}
+.plats img {
+  padding-left: 15%;
+  margin-bottom: 25px;
+}
+
+.dessertsBoissons {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+.desserts {
+  border: 1px solid;
+  width: 320px;
+  border-radius: 15px;
+}
+.desserts h2 {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+.desserts h3 {
+  text-align: center;
+}
+.desserts img {
+  padding-left: 15%;
+  margin-bottom: 25px;
+}
+.boissons {
   border: 2px solid;
   width: 320px;
   margin-left: 5em;
 }
+.boissons h2 {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+.boissons h3 {
+  text-align: center;
+}
+.boissons img {
+  padding-left: 15%;
+  margin-bottom: 25px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 25px;
+}
+
 /* §§§§§§§§§§§§§§§§§§§§§debut du responsive§§§§§§§§§§§§§§§§§§§§§§§ */
 @media (max-width: 730px) {
   .entreesPlats {
@@ -188,5 +264,16 @@ h1 {
   }
   .plats {
     margin-left: 0;
+    margin-top: 15px;
+  }
+  .dessertsBoissons {
+    flex-direction: column;
+  }
+  .boissons {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+  footer {
+    word-wrap: break-word;
   }
 }
