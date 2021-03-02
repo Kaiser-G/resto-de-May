@@ -177,6 +177,8 @@ a {
   margin: 45px 30px 20px 30px;
   border: 2px solid;
   padding: 20px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px 5px #000000;
 }
 
 .suggestion h1 {
@@ -202,6 +204,11 @@ a {
   margin-top: -10%;
   margin-bottom: 10%;
 }
+.salade {
+  border-radius: 15px;
+  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
+    10px -12px 33px 18px rgba(0, 0, 0, 0);
+}
 .plat {
   display: flex;
   flex-direction: column;
@@ -218,7 +225,6 @@ a {
 }
 
 .button {
-  text-align: center;
   border: none;
   font-size: 1.2em;
   border-radius: 8px;
@@ -228,13 +234,12 @@ a {
   margin-top: 25px;
   margin-bottom: 30px;
   padding: 15px 5px 15px 5px;
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 .button a {
   color: red;
   text-decoration: none;
   text-align: center;
-  border: none;
-  border-radius: 8px;
   font-size: 1.5em;
 }
 
@@ -255,9 +260,10 @@ a {
 }
 .contact {
   margin: 45px 30px 20px 30px;
-  border: 2px solid;
+  /* border: 2px solid; */
   padding: 20px;
-  border: 2px solid;
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px 5px #000000;
 }
 .contact h1 {
   background-color: #ffffff;
@@ -287,6 +293,7 @@ a {
 }
 .map {
   margin-left: 125px;
+  margin-bottom: 15px;
 }
 .contactez {
   display: flex;
