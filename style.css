@@ -307,8 +307,9 @@ a {
   margin-top: 15px;
 }
 .contactez a p {
+  color: red;
   font-weight: bold;
-  background-color: rgb(164, 245, 139);
+  /* background-color: rgb(164, 245, 139); */
   border-radius: 5px;
   padding: 5px;
 }
@@ -378,7 +379,6 @@ a {
 @media (max-width: 400px) {
   .map {
     margin-left: -40px;
-    width: 100px;
     justify-content: center;
   }
 }
