@@ -196,7 +196,7 @@ h1 {
   width: 320px;
   margin-left: 5em;
   border-radius: 15px;
-  background-color: aqua;
+  background-color: rgb(183, 255, 0);
 }
 .plats h2 {
   text-align: center;
